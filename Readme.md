@@ -5,7 +5,7 @@
 ## To Use the project
 
 ### Clone the repo
- ```git clone https://github.com/kingsantus/chatbot```
+ ```git clone https://github.com/Kingsantus/simple-telegram-chatbot```
 
 ### provide the following and 
 create .env file and save this in it
