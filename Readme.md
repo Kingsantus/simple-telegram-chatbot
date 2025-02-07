@@ -5,7 +5,9 @@
 ## To Use the project
 
 ### Clone the repo
- ```git clone https://github.com/Kingsantus/simple-telegram-chatbot```
+ ```bash
+ git clone https://github.com/Kingsantus/simple-telegram-chatbot
+ ```
 
 ### provide the following and 
 create .env file and save this in it
@@ -19,4 +21,6 @@ OPENAI_API_KEY="openai api key"
 ```
 
 ### Run the application
- ```Python main.py```
+ ```python
+    Python main.py
+ ```
