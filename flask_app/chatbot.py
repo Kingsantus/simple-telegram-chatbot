@@ -4,16 +4,25 @@ import os
 
 load_dotenv()
 
+# import the api key from .env
 api_key = os.getenv("OPENAI_API_KEY")
+
+# instantiate the openai with key
 client = OpenAI(api_key=api_key)
 
+#TODO
+# Array to save conversation to retain information, it clear once stopped
+# it would be changed to database
 conversation_history = []
 
+# accept text and return response
 def get_bot_response(user_text: str) -> str:
+    # specifying the model
     model_engine = "gpt-3.5-turbo"
 
     # Initialize conversation history with a system message
     if len(conversation_history) == 0:
+        # save any conversation sent to this url
         conversation_history.append({
             "role": "system",
             "content": "You are a helpful assistant specialized in helping developers and newbies with programming-related questions."
